@@ -1,0 +1,5 @@
+export enum ActionType {
+    CHANGE_IS_LOGIN = "CHANGE_IS_LOGIN",
+    CHANGE_NOT_LOGIN = "CHANGE_NOT_LOGIN"
+}
+
