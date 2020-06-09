@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.site-layout {
+  background: #fff;
+}
+.layout-header{
+  background: #fff;
+  padding: 0;
+}
+.layout-content{
+  
+}
