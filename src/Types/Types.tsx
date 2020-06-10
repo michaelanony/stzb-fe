@@ -4,8 +4,14 @@
 export type UserResp = {
     code: 200 | 500,
     msg: string
-    data: UserInfo[],
+    data: MemberResp,
 
+}
+export type MemberResp = {
+    members:UserInfo[],
+    total_members:number,
+    start_page:number,
+    end_page:number,
 }
 export type UserInfo = {
     name: string,

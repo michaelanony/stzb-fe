@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import './App.scss';
+import { Layout } from 'antd';
 import UserTableInfo from '../src/Pages/UserTableInfo/UserTableInfo'
 import { AppState } from "./Store";
 import { connect } from "react-redux";
@@ -42,10 +42,12 @@ const App: React.FC<ReturnType<typeof mapStateToProps> & typeof mapDispatchToPro
        <Layout style={{ minHeight: '100vh' }}>
        <MenuBar/>
        <Layout className="site-layout">
-       <Header className="layout-header"/>
-       <Content className="layout-content">
-      {generator()}
-    </Content>
+       <Header className="site-layout-background"/>
+       <Content className="layout-contnet">
+    
+              {generator()}
+    
+          </Content>
         <Footer style={{ textAlign: 'center' }}>STZB CMS ©2020</Footer>
     </Layout>
     </Layout>
